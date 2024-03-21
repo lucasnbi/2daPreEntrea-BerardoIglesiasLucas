@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bodega El Vínculo</title>
-    <link rel="shortcut icon" href="./img/favicon.png"type="image/x-icon">
-    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./scss/mainnew.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/bf7d633feb.js" crossorigin="anonymous"></script>
     <meta name="description" content="Fundada en 2023, Bodega El Vínculo es reconocida por su rol pionero en haber hecho resurgir la variedad Malbec y haber descubierto los terroirs de altura ...">
-    <meta name="keywords" content="bodega argentina, malbec, pinot noir, cabernet franc, el vinculo, mendoza, vino de altura, vino con madera"> 
+    <meta name="keywords" content="bodega argentina, malbec, pinot noir, cabernet franc, el vinculo, mendoza, vino de altura, vino con madera">
 </head>
 <body class="index_background">
     <main>
@@ -20,28 +20,43 @@
                 </div>
                 <div class="animate__animated animate__wobble">
                     <div class="flex_disclaimer">
-                        <h1 id="question">¿SOS MAYOR DE 18 AÑOS?</h1>
+                        <h1 id="question">BODEGA: EL VÍNCULO</h1>
                     </div>
                 </div>
             </div>
-        </section> 
-        <section> <!-- Botones -->
-            <div class="index_btn">
-                <div class="index_botones">
-                <a href="./pages/home.html">¡Sí, claro!</a>
-                </div>
-                <div class="index_botones">
-                <a href="https://www.youtube.com/playlist?list=PLlqVfYsWVI67zHdFAILr_cr4g2NwcobOq">¡Mmm, no!</a>
+            </section> 
+        <section><!-- Iniciar Sesión -->
+            <div class="flexCont">
+                <div class="flex_disclaimer">
+                    <h1>Iniciar Sesión</h1>
+                    <form id="formulario-login">
+                        <div class="form-group">
+                            <label for="usuario">Usuario:</label>
+                            <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario">
+                        </div>
+                        <div class="form-group">
+                            <label for="contrasena">Contraseña:</label>
+                            <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña">
+                        </div>
+                        <div class="center">
+                            <button class="index_botones" id="btn-login">Iniciar Sesión</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </section> 
+        </section>  
         <section><!-- Disclaimer -->
             <div class="flexCont">
                 <div class="flex_disclaimer">
-                <p>Si sos menor de edad tenés que saber que el consumo de alcohol no es bueno para tu salud sobre todo para tu cerebro que se encuentra en proceso de desarrollo. Se honesto/a en tu respuesta.</p>
+                    <p>Sistema de inventario de vinos.</p>
+                    <p>Todos los derechos reservados a:</p> 
+                    <p>Bodega El Vínculo.</p>
                 </div>
             </div>
-        </section>       
+        </section>  
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>

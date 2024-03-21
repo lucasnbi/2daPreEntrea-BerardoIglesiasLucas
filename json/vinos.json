@@ -1,0 +1,32 @@
+[
+  {
+    "id": "pinotNoir",
+    "nombre": "Pinot Noir",
+    "stock": 0
+  },
+  {
+    "id": "malbec",
+    "nombre": "Malbec",
+    "stock": 0
+  },
+  {
+    "id": "cabernetFranc",
+    "nombre": "Cabernet Franc",
+    "stock": 0
+  },
+  {
+    "id": "bonarda",
+    "nombre": "Bonarda",
+    "stock": 0
+  },
+  {
+    "id": "merlot",
+    "nombre": "Merlot",
+    "stock": 0
+  },
+  {
+    "id": "syrah",
+    "nombre": "Syrah",
+    "stock": 0
+  }
+]
