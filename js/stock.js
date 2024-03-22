@@ -10,18 +10,19 @@ document.addEventListener("DOMContentLoaded", function () {
     const btnLimpiar = document.getElementById("btn-limpiar");
     const btnSalir = document.getElementById("btn-salir");
 
-    fetch('../json/vinos.json')
-        .then(response => response.json())
-        .then(data => {
-            data.forEach(vino => {
+    function verificarYCrearElementos(vinos) {
+        const yaCreados = document.querySelectorAll(".left input[type='number']").length > 0;
+
+        if (!yaCreados) {
+            vinos.forEach(vino => {
                 const label = document.createElement("label");
-                label.setAttribute("for", vino.nombre.toLowerCase().replace(" ", ""));
+                label.setAttribute("for", vino.nombre.toLowerCase().replace(/\s+/g, ""));
                 label.textContent = vino.nombre + ":";
 
                 const input = document.createElement("input");
                 input.setAttribute("type", "number");
-                input.setAttribute("id", vino.nombre.toLowerCase().replace(" ", ""));
-                input.setAttribute("name", vino.nombre.toLowerCase().replace(" ", ""));
+                input.setAttribute("id", vino.nombre.toLowerCase().replace(/\s+/g, ""));
+                input.setAttribute("name", vino.nombre.toLowerCase().replace(/\s+/g, ""));
                 input.setAttribute("min", "0");
 
                 const br = document.createElement("br");
@@ -30,6 +31,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelector(".left").appendChild(input);
                 document.querySelector(".left").appendChild(br);
             });
+        }
+    }
+
+    fetch('../json/vinos.json')
+        .then(response => response.json())
+        .then(data => {
+            verificarYCrearElementos(data);
         })
         .catch(error => console.error('Error fetching vinos:', error));
 
