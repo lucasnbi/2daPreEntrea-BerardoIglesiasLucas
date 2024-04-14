@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
             confirmButtonText: 'OK',
             confirmButtonColor: '#dcdcdc'
         }).then(() => {
-            window.location.href = "../index.html";
+            window.location.href = "./index.html";
         });
     }
 
